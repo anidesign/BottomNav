@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BottomTabLayoutActivity" />
-        <activity android:name=".BottomNavigationViewActivity"></activity>
+        <activity android:name=".BottomNavigationViewActivity" />
+        <activity android:name=".FragmentTabHostActivity"></activity>
     </application>
 
 </manifest>

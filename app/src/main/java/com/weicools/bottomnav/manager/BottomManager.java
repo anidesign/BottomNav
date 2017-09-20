@@ -28,7 +28,7 @@ public class BottomManager {
             R.drawable.ic_android_purple_200_24dp,
             R.drawable.ic_account_circle_purple_200_24dp
     };
-    private static final String[] mTabTitle = new String[]{"首页", "开发", "个人"};
+    public static final String[] mTabTitle = new String[]{"首页", "开发", "个人"};
 
     public static Fragment[] getFragments(String from) {
         Fragment fragments[] = new Fragment[3];
