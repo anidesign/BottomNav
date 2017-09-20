@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.weicools.bottomnav.R;
 import com.weicools.bottomnav.fragment.AccountFragment;
-import com.weicools.bottomnav.fragment.HistoryFragment;
 import com.weicools.bottomnav.fragment.AndroidDevFragment;
 import com.weicools.bottomnav.fragment.HomeFragment;
 
@@ -22,23 +21,20 @@ public class BottomData {
     public static final int[] mTabRes = new int[]{
             R.drawable.ic_home_black_24dp,
             R.drawable.ic_android_black_24dp,
-            R.drawable.ic_change_history_black_24dp,
             R.drawable.ic_account_circle_black_24dp
     };
     public static final int[] mTabResPressed = new int[]{
             R.drawable.ic_home_purple_200_24dp,
             R.drawable.ic_android_purple_200_24dp,
-            R.drawable.ic_change_history_purple_200_24dp,
             R.drawable.ic_account_circle_purple_200_24dp
     };
-    private static final String[] mTabTitle = new String[]{"首页", "发现", "关注", "我的"};
+    private static final String[] mTabTitle = new String[]{"首页", "开发", "个人"};
 
     public static Fragment[] getFragments(String from) {
-        Fragment fragments[] = new Fragment[4];
+        Fragment fragments[] = new Fragment[3];
         fragments[0] = HomeFragment.newInstance(from);
         fragments[1] = AndroidDevFragment.newInstance(from);
-        fragments[2] = HistoryFragment.newInstance(from);
-        fragments[3] = AccountFragment.newInstance(from);
+        fragments[2] = AccountFragment.newInstance(from);
         return fragments;
     }
 

@@ -35,10 +35,10 @@ public class BottomTabLayoutActivity extends AppCompatActivity {
                     TextView text = view.findViewById(R.id.tab_content_text);
                     if (i == tab.getPosition()) {
                         icon.setImageResource(BottomData.mTabResPressed[i]);
-                        text.setTextColor(getResources().getColor(android.R.color.black));
+                        text.setTextColor(getResources().getColor(R.color.高端黑_black));
                     } else {
                         icon.setImageResource(BottomData.mTabRes[i]);
-                        text.setTextColor(getResources().getColor(android.R.color.darker_gray));
+                        text.setTextColor(getResources().getColor(R.color.低调灰_hoki));
                     }
                 }
             }
@@ -54,7 +54,7 @@ public class BottomTabLayoutActivity extends AppCompatActivity {
             }
         });
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             mTabLayout.addTab(mTabLayout.newTab().setCustomView(BottomData.getTabView(this, i)));
         }
     }
@@ -71,9 +71,6 @@ public class BottomTabLayoutActivity extends AppCompatActivity {
 
             case 2:
                 fragment = mFragments[2];
-                break;
-            case 3:
-                fragment = mFragments[3];
                 break;
         }
 

@@ -12,6 +12,5 @@
 
     <string name="home_fragment">HomeFragment</string>
     <string name="android_dev_fragment">AndroidDevFragment</string>
-    <string name="history_fragment">HistoryFragment</string>
     <string name="account_fragment">AccountFragment</string>
 </resources>
