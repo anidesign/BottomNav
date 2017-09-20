@@ -1,4 +1,4 @@
-package com.weicools.bottomnav.data;
+package com.weicools.bottomnav.manager;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -17,7 +17,7 @@ import com.weicools.bottomnav.fragment.HomeFragment;
  * Time: 2017/9/20 下午12:32
  */
 
-public class BottomData {
+public class BottomManager {
     public static final int[] mTabRes = new int[]{
             R.drawable.ic_home_black_24dp,
             R.drawable.ic_android_black_24dp,
@@ -50,7 +50,7 @@ public class BottomData {
         ImageView tabIcon = view.findViewById(R.id.tab_content_image);
         TextView tabText = view.findViewById(R.id.tab_content_text);
 
-        tabIcon.setImageResource(BottomData.mTabRes[position]);
+        tabIcon.setImageResource(BottomManager.mTabRes[position]);
         tabText.setText(mTabTitle[position]);
 
         return view;

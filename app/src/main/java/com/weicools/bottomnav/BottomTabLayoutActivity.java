@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.weicools.bottomnav.data.BottomData;
+import com.weicools.bottomnav.manager.BottomManager;
 
 public class BottomTabLayoutActivity extends AppCompatActivity {
     private TabLayout mTabLayout;
@@ -19,7 +19,7 @@ public class BottomTabLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_tab_layout);
 
-        mFragments = BottomData.getFragments("TabLayout Tab");
+        mFragments = BottomManager.getFragments("TabLayout Tab");
         initView();
     }
 
@@ -34,10 +34,10 @@ public class BottomTabLayoutActivity extends AppCompatActivity {
                     ImageView icon = view.findViewById(R.id.tab_content_image);
                     TextView text = view.findViewById(R.id.tab_content_text);
                     if (i == tab.getPosition()) {
-                        icon.setImageResource(BottomData.mTabResPressed[i]);
+                        icon.setImageResource(BottomManager.mTabResPressed[i]);
                         text.setTextColor(getResources().getColor(R.color.高端黑_black));
                     } else {
-                        icon.setImageResource(BottomData.mTabRes[i]);
+                        icon.setImageResource(BottomManager.mTabRes[i]);
                         text.setTextColor(getResources().getColor(R.color.低调灰_hoki));
                     }
                 }
@@ -55,7 +55,7 @@ public class BottomTabLayoutActivity extends AppCompatActivity {
         });
 
         for (int i = 0; i < 3; i++) {
-            mTabLayout.addTab(mTabLayout.newTab().setCustomView(BottomData.getTabView(this, i)));
+            mTabLayout.addTab(mTabLayout.newTab().setCustomView(BottomManager.getTabView(this, i)));
         }
     }
 

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.weicools.bottomnav.data.BottomData;
+import com.weicools.bottomnav.manager.BottomManager;
 
 public class BottomNavigationViewActivity extends AppCompatActivity {
     private Fragment[] mFragments;
@@ -17,7 +17,7 @@ public class BottomNavigationViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation_view);
 
-        mFragments = BottomData.getFragments("BottomNavigationView Tab");
+        mFragments = BottomManager.getFragments("BottomNavigationView Tab");
         initView();
     }
 
