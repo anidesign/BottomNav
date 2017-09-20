@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.by_tab_Layout).setOnClickListener(this);
         findViewById(R.id.by_bottom_navigation_view).setOnClickListener(this);
         findViewById(R.id.by_fragment_tab_host).setOnClickListener(this);
+        findViewById(R.id.by_nav_tab_bar).setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.by_fragment_tab_host:
                 intent = new Intent(this, FragmentTabHostActivity.class);
+                break;
+            case R.id.by_nav_tab_bar:
+                intent = new Intent(this, NavigationTabBarActivity.class);
                 break;
         }
 

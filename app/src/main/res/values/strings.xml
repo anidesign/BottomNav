@@ -4,8 +4,7 @@
     <string name="tab_layout_fragment">TabLayout＋Fragment</string>
     <string name="bottom_navigation_view_fragment">BottomNavigationView＋Fragment</string>
     <string name="fragment_tab_host_fragment">FragmentTabHost＋Fragment</string>
-    <string name="radio_group_button_fragment">RadioGroupButton＋Fragment</string>
-    <string name="custom_tab_view_fragment">CustomTabView ＋Fragment</string>
+    <string name="navigation_view_pager">NavigationTabBar+ViewPager</string>
 
     <string name="title">Title</string>
     <string name="content">Content</string>
@@ -16,4 +15,9 @@
     <string name="nav_home_title">首页</string>
     <string name="nav_dev_title">开发</string>
     <string name="nav_account_title">个人</string>
+
+    <string name="navigation">Navigation</string>
+    <string name="tab">Tab</string>
+    <string name="bar">Bar</string>
+    <string name="page">Page</string>
 </resources>

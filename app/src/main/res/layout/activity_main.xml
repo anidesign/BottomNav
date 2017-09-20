@@ -39,5 +39,16 @@
         android:text="@string/fragment_tab_host_fragment"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/by_nav_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/知乎蓝_dodger_blue"
+        android:gravity="center"
+        android:text="@string/navigation_view_pager"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
 </LinearLayout>
 
