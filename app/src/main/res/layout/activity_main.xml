@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/by_tab_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:background="@color/酷安绿_chateau_green"
+        android:gravity="center"
+        android:text="@string/tab_layout_fragment"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/by_bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/姨妈红_valencia"
+        android:gravity="center"
+        android:text="@string/bottom_navigation_view_fragment"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/by_fragment_tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/哔哩粉_light_crimson"
+        android:gravity="center"
+        android:text="@string/fragment_tab_host_fragment"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/by_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/知乎蓝_dodger_blue"
+        android:gravity="center"
+        android:text="@string/radio_group_button_fragment"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/by_custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/水鸭青_gossamer"
+        android:gravity="center"
+        android:text="@string/custom_tab_view_fragment"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>
+
