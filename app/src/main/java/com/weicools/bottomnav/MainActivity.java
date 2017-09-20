@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this,BottomTabLayoutActivity.class);
                 break;
             case R.id.by_bottom_navigation_view:
-
+                intent = new Intent(this,BottomNavigationViewActivity.class);
                 break;
             case R.id.by_fragment_tab_host:
 

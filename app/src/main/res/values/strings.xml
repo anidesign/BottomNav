@@ -13,4 +13,7 @@
     <string name="home_fragment">HomeFragment</string>
     <string name="android_dev_fragment">AndroidDevFragment</string>
     <string name="account_fragment">AccountFragment</string>
+    <string name="nav_home_title">首页</string>
+    <string name="nav_dev_title">开发</string>
+    <string name="nav_account_title">个人</string>
 </resources>
